@@ -25,7 +25,7 @@ app.get("/todos", function (req, res) {
     if (err) {
       console.log(err);
     } else {
-      res.render("index", { dados: results.rows });
+      res.render("home/home", { dados: results.rows });
       //   res.json(results.rows);
     }
   });
